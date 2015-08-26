@@ -18,6 +18,7 @@ from recipes.recipe_publish_html import publish_html
 
 from recipes.recipe_prepare_recipe_logs import prepare_recipe_logs
 from recipes.recipe_tell_wvsol import tell_wvsol, wvlsol_tell
+from recipes.recipe_blaze_correct import blaze_correct
 
 recipe_list = [recipes.recipe_flat.flat,
                #recipes.recipe_thar.thar,
@@ -34,7 +35,8 @@ recipe_list = [recipes.recipe_flat.flat,
                publish_html,
                prepare_recipe_logs,
                tell_wvsol,
-               wvlsol_tell
+               wvlsol_tell,
+               blaze_correct
                ]
 
 from recipes.recipe_register import get_recipe_list as get_register_recipe_list
